@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "name": "FFOS app template",
+  "description": "Firefox OS open web app template with localisation using Middleman.",
+  "launch_path": "/index.html",
+  "icons": {
+    "32": "/images/32.png",
+    "60": "/images/60.png",
+    "64": "/images/64.png",
+    "128": "/images/128.png",
+    "256": "/images/256.png"
+  },
+  "developer": {
+    "name": "Julien Grillot",
+    "url": "http://github.com/Bahanix/ffos-template"
+  },
+  "appcache_path": "/manifest.appcache",
+  "installs_allowed_from": ["*"],
+  "locales": {
+    "fr": {
+      "name": "Structure d'une app FFOS",
+      "description": "Squelette d'une application web Firefox OS avec traductions."
+    }
+  },
+  "default_locale": "en"
+}

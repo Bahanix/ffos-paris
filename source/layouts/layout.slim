@@ -1,0 +1,16 @@
+doctype html
+html lang="en" manifest="manifest.appcache"
+  head
+    meta charset="utf-8"
+    title == "FFOS app template"
+    meta name="description" content="Firefox OS open web app template with localisation using Middleman"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link rel="icon" size="32x32" href="#{image_path '32.png'}"
+    link rel="icon" size="64x64" href="#{image_path '64.png'}"
+    link rel="icon" size="128x128" href="#{image_path '128.png'}"
+    link rel="icon" size="256x256" href="#{image_path '256.png'}"
+    == stylesheet_link_tag "all"
+
+  body class="#{page_classes}"
+    == yield
+    == javascript_include_tag  "all"
