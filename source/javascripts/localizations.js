@@ -1,9 +1,9 @@
 String.toLocaleString({
   "en": {
-    "name": "FFOS app template"
+    "name": "Paris"
   },
   "fr": {
-    "name": "Structure d'une app FFOS"
+    "name": "Paris"
   }
 })
 
