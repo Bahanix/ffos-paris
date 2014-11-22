@@ -1,7 +1,7 @@
 {
-  "version": "1.0",
-  "name": "FFOS app template",
-  "description": "Firefox OS open web app template with localisation using Middleman.",
+  "version": "1.1",
+  "name": "Paris",
+  "description": "Find your path in Paris subway",
   "launch_path": "/index.html",
   "icons": {
     "32": "/images/32.png",
@@ -12,14 +12,14 @@
   },
   "developer": {
     "name": "Julien Grillot",
-    "url": "http://github.com/Bahanix/ffos-template"
+    "url": "http://github.com/Bahanix/ffos-paris"
   },
   "appcache_path": "/manifest.appcache",
   "installs_allowed_from": ["*"],
   "locales": {
     "fr": {
-      "name": "Structure d'une app FFOS",
-      "description": "Squelette d'une application web Firefox OS avec traductions."
+      "name": "Paris",
+      "description": "Itinéraire métro, RER et transilien."
     }
   },
   "default_locale": "en"

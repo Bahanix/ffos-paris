@@ -1,1 +1,1 @@
-String.toLocaleString({en:{name:"FFOS app template"},fr:{name:"Structure d'une app FFOS"}}),document.title="name".toLocaleString(),document.documentElement.lang=String.locale||document.documentElement.lang;
+String.toLocaleString({en:{name:"Paris"},fr:{name:"Paris"}}),document.title="name".toLocaleString(),document.documentElement.lang=String.locale||document.documentElement.lang;
