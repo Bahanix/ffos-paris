@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-size: 1em;
-  font-family: "Fira Sans", "DejaVu Sans"
+  font-family: "Fira Sans", "DejaVu Sans", "Roboto", "Helvetica", sans-serif;
 }
 input {
   font-size: 1em;
@@ -24,11 +24,14 @@ input {
   }
 }
 #result {
-  p {
-    line-height: 1.85em;
-    margin-left: 1em;
+  .route, .stop {
+    padding: 1em;
+    display: inline-block;
   }
-  .name {
-    margin-left: 1em;
+  .route {
+    width: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
   }
 }
