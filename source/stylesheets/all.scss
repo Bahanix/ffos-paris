@@ -1,4 +1,4 @@
-@import "metrodna";
+@import "typeahead";
 
 body {
   margin: 0;
@@ -6,6 +6,7 @@ body {
   font-family: "Fira Sans", "DejaVu Sans", "Roboto", "Helvetica", sans-serif;
 }
 input {
+  border-radius: 0;
   font-size: 1em;
   background: transparent;
   width: 100%;

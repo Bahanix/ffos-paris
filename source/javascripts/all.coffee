@@ -21,3 +21,14 @@ $form.onsubmit = (e) ->
   e.preventDefault()
   path = graph.findShortestPath($from.value, $to.value)
   $result.innerHTML = prettify(path)
+
+strs = Object.keys(stops)
+$('#from, #to').typeahead {},
+  name: 'stops'
+  source: (q, cb) ->
+    matches = []
+    substrRegex = new RegExp "^#{q}", 'i'
+    $.each strs, (i, str) ->
+      if substrRegex.test str
+        matches.push { value: str }
+    cb(matches)
