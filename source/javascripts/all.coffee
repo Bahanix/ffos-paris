@@ -22,13 +22,13 @@ $form.onsubmit = (e) ->
   path = graph.findShortestPath($from.value, $to.value)
   $result.innerHTML = prettify(path)
 
-strs = Object.keys(stops)
+strs = Object.keys(stops).sort()
 $('#from, #to').typeahead {},
   name: 'stops'
   source: (q, cb) ->
     matches = []
-    substrRegex = new RegExp "^#{q}", 'i'
+    substrRegex = new RegExp "^#{removeDiacritics(q)}", 'i'
     $.each strs, (i, str) ->
-      if substrRegex.test str
+      if substrRegex.test removeDiacritics(str)
         matches.push { value: str }
     cb(matches)
